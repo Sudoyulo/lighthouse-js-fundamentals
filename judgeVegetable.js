@@ -1,9 +1,7 @@
 const judgeVegetable = function (vegetables, metric) {
-  var topName;
-  var topMetric;
+  var topName = vegetables[0].submitter;
+  var topMetric = vegetables[0][metric];
 
-  topName = vegetables[0].submitter;
-  topMetric = vegetables[0][metric];
 
   for (let i = 1; i < vegetables.length; i++){
     if (vegetables[i][metric] > topMetric){
